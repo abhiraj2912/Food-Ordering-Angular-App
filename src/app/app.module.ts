@@ -10,6 +10,7 @@ import { UserregisterComponent } from './userregister/userregister.component';
 import { ResturantsComponent } from './resturants/resturants.component';
 import { OrderfoodComponent } from './orderfood/orderfood.component';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 const myrouter:Routes=[{
   path:"",
@@ -46,7 +47,8 @@ const myrouter:Routes=[{
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myrouter)
+    RouterModule.forRoot(myrouter),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
